@@ -1,0 +1,221 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a, a:link, a:visited, a:hover  {
+    text-decoration: none;
+}
+
+
+:root {
+    --blue-color: rgba(204, 204, 255, 0.5)
+}
+
+.main__page {
+    margin: 20px auto;
+    width: 1024px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.5px;
+    background-color: #fff;
+    box-shadow: 10px 10px 40px -1px rgb(0, 0, 0);
+}
+
+.main__page-wrapper {
+    display: flex;
+}
+
+.page__brief-info {
+    width: 350px;
+    background-color: var(--blue-color);
+    color: #555555;
+}
+
+.brief__header {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.brief__header-avatar {
+    margin: 0 auto;
+    border: 10px solid var(--blue-color);
+    border-radius: 50%;
+    width: 204px;
+    height: 204px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.brief__header img {
+    position: relative;
+    bottom: 10px;
+    width: 185px;
+}
+
+.brief__header h1 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+.brief__header h2 {
+    margin: 30px 0px 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+main {
+    padding: 0px 40px;
+}
+
+main .brief__contacts h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translate(0, -50%);
+}
+
+main h3 {
+    width: 130px;
+    margin: 40px auto 20px;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #555555;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+.brief__contacts ul {
+    list-style: none;
+    margin-left: 40px;
+}
+
+main li {
+    margin-bottom: 10px;
+    line-height: 27px;
+    font-size: 16px
+}
+
+.brief__contacts li img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.brief__contacts li p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.brief__contacts a,
+.brief__contacts a:active,
+.brief__contacts a:visited {
+    color: #555555;
+}
+
+.brief__skills ul,
+.brief__info ul {
+    margin-left: 50px;
+}
+
+.brief__info li {
+    font-weight: 600;
+
+}
+
+.brief__info li p  {
+    font-weight: 400;
+}
+
+.page__complete-info {
+    padding: 40px;
+    width: 670px;
+}
+
+.compete__header-wrapper {
+    display: flex;
+    margin: 30px 0px 15px 45px;
+}
+
+.page__complete-info {
+    line-height: 27px;
+}
+
+.page__complete-info p {
+    margin-left: 45px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+.page__complete-info h3 {
+    vertical-align: middle;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555555;
+    border-bottom: 2px solid #555555;
+    line-height: 27px;
+}
+
+.complete__courses li,
+.complete__languages li {
+    margin-left: 45px;
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+pre {
+    background-color: #f5f5f5;
+    font-size: 12.5px;
+    line-height: 15px;
+    margin-top: 15px;
+    padding: 0px 0px 10px 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+    background: #555555;
+}
+
+footer a,
+footer a:active,
+footer a:visited {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer img {
+    width: 36px;
+    height: 36px;
+    padding-right: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#rsschool {
+    width: 73px;
+    height: 26px;
+}
