@@ -2,11 +2,140 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <p>cv will be soon</p>
+    <div class="main__page">
+        <div class="main__page-wrapper">
+            <div class="page__brief-info">
+                <header class="brief__header">
+                    <div class="brief__header-avatar">
+                        <img src="./images/avatar.jpg" alt="photo">
+                    </div>
+                    <h1>Dmitry Ivashchenko</h1>
+                    <h2>Junior JavaScript Developer</h2>
+                </header>
+    
+                <main>
+                    <nav>
+                        <section class="brief__contacts">
+                            <h3>Contacts</h3>
+                            <ul>
+                                <li>
+                                    <img src="./images/telegram.svg" alt="telegram">
+                                    <p><a target="_blank" href="https://t.me/beckerkekw">@beckerkekw</a></p>
+                                </li>
+                                <li>
+                                    <img src="./images/github.svg" alt="github">
+                                    <p><a target="_blank" href="https://github.com/h3loo">@h3loo</a></p>
+                                </li>
+                                <li>
+                                    <img src="./images/linkedin.svg" alt="linkedin">
+                                    <p><a target="_blank" href="https://www.linkedin.com/in/dmitry-ivashchenko-952457257/">LinkedIn</a></p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="brief__info">
+                            <h3>Info</h3>
+                            <ul>
+                                <li>Address
+                                    <p>Chernivtsi, Ukraine</p>
+                                </li>
+                                <li>Phone
+                                    <p>+380 (95) 222-01-80</p>
+                                </li>
+                                <li>Date of birth
+                                    <p>14.01.2022</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="brief__skills">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>HTML5, BEM</li>
+                                <li>CSS3 (SCSS/SASS)</li>
+                                <li>JavaSript (ES6+, DOM)</li>
+                                <li>NodeJS (Basics)</li>
+                                <li>Git/GitHub</li>
+                            </ul>
+                        </section>
+                    </nav>
+                </main>
+            </div>
+            <div class="page__complete-info">
+                <section class="complete__myself">
+                    <div class="compete__header-wrapper">
+                        <h3>About myself</h3>
+                    </div>
+                    <p>Motivated, ready to study and work JavaScript developer. First-year student of the Department of Artificial Intelligence, Kharkov National University of Radio Electronics. I want to get into a team where I can develop and grow not only as a developer, but also as a person.</p>
+                </section>
+                <section class="complete__education">
+                    <div class="compete__header-wrapper">
+                        <h3>Education</h3>
+                    </div>
+                    <p><strong>Kharkiv National University of Radioelectronics</strong></p>
+                    <p>Computer Science</p>
+                    <p>Years: 2022-2026</p>
+                    <p>Specialization: Artificial Intelligence</p>
+                </section>
+                <section class="complete__courses">
+                    <div class="compete__header-wrapper">
+                        <h3>Courses</h3>
+                    </div>
+                    <ul>
+                        <li>HTML & CSS course on HTML Academy</li>
+                        <li>JavaScript Manual on learnjavascript.ru</li>
+                        <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+                    </ul>
+                </section>
+                <section class="complete__languages">
+                    <div class="compete__header-wrapper">
+                        <h3>Languages</h3>
+                    </div>
+                    <ul>
+                        <li>Ukrainian, Russian - native</li>
+                        <li>English - intermediate (B1)</li>
+                    </ul>
+                </section>
+                <section class="complete__code">
+                    <div class="compete__header-wrapper">
+                        <h3>Code expamle</h3>
+                    </div>
+                    <p>Form processing, asynchronous receiving of user data requested from the server.</p>
+                    <pre><code>
+    export async function processAuthForm (event) {
+        event.preventDefault();
+        const inputValue = document.querySelector(".auth-input").value;
+    
+        const response = await fetch("link", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json;charset=utf-8"
+            },
+            body: JSON.stringify({email: inputValue})
+            }); 
+            
+            authConfirmation();
+        }
+    }</code></pre>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/h3loo" target="_blank">
+                <img src="./images/github_white.svg" alt="github">
+                Visit my GitHub
+            </a>
+            <p>© 2022</p>
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="./images/rsschool.svg" alt="rsschool" id="rsschool">
+            </a>
+        </footer>
+    </div>
 </body>
 </html>
